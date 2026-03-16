@@ -2,8 +2,7 @@
 {
     public class ChatViewModel
     {
-        public List<MessageViewModel>? Messages { get; set; }
-
-        public MessageViewModel CurrentMessage { get; set; } = new MessageViewModel();
+        public MessageViewModel CurrentMessage { get; set; } = new();
+        public List<MessageViewModel> Messages { get; set; } = new();
     }
 }
