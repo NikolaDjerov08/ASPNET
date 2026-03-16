@@ -1,21 +1,11 @@
-﻿@model ProductViewModel
+﻿@model Asp_net.Models.ProductViewModel
 
 @{
-    ViewBag.Title = "Product N." + Model.Id;
+    ViewData["Title"] = "Product";
 }
 
-<div class="card">
-    <div class="card-header">
-        @ViewBag.Title
-    </div>
+<h2>Product Info</h2>
 
-    <div class="card-body">
-        <h5 class="card-title">
-            Product Name: @Model.Name
-        </h5>
-
-        <p class="card-text">
-            Price: @Model.Price lv.
-        </p>
-    </div>
-</div>
+<p><strong>ID:</strong> @Model.Id</p>
+<p><strong>Name:</strong> @Model.Name</p>
+<p><strong>Price:</strong> @Model.Price lv</p>
