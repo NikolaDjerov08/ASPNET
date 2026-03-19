@@ -42,7 +42,6 @@ namespace Asp_net.Controllers
                     newMessage.MessageText
                 ));
             }
-
             return RedirectToAction("Show");
         }
     }
